@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="common" script:language="StarBasic">REM  *****  BASIC  *****
+
+Sub localize_pepito(languageCode, countryCode)
+&apos; Copy localized configuration files to the Pepito Cleaner location
+
+	oPackageInfoProvider = GetDefaultContext.getByName(&quot;/singletons/com.sun.star.deployment.PackageInformationProvider&quot;)
+	sPackageLocation = oPackageInfoProvider.getPackageLocation(&quot;org.peter88213.poemenia&quot;)
+	tPackageLocation = oPackageInfoProvider.getPackageLocation(&quot;PepitoCleaner.addon&quot;)
+    
+	langFolder = languageCode + &quot;-&quot; + countryCode
+
+	Dim sourcePath, targetPath, markerFile, languageFile As String
+
+	sourcePath = ConvertFromURL(sPackageLocation + &quot;/&quot; + langFolder + &quot;/&quot;)
+	targetPath = ConvertFromURL(tPackageLocation + &quot;/&quot;)
+	markerFile = targetPath + &quot;poemenia.txt&quot;
+	languageFile = &quot;language_&quot; + languageCode + &quot;.txt&quot;
+	
+	&apos; Is Pepito Cleaner already localized by poemenia?
+	
+	If FileExists(markerFile) Then
+		common.reset_pepito()
+		
+	End If
+
+	&apos; Create a marker
+	
+    file_no = FreeFile
+	Open markerFile For Output As #file_no
+	Print #file_no, languageFile
+	Close #file_no
+	
+
+	Dim cnfFiles(2) As String
+	cnfFiles(0) = languageFile
+	cnfFiles(1) = &quot;preference.txt&quot;
+	cnfFiles(2) = &quot;RegEx_general.txt&quot; 
+
+
+	Dim cnfFile, sourceFile, targetFile, backupFile As String
+	
+	For Each cnfFile in cnfFiles
+	
+		sourceFile = sourcePath + cnfFile
+		targetFile = targetPath + cnfFile
+		backupFile = targetFile + &quot;.bak&quot;
+
+		&apos; Back up the original file, if existent:
+	
+		If FileExists(targetFile) And Not FileExists(backupFile) Then
+			Name targetFile As backupFile
+			
+		End If
+		
+		&apos; Put the localized file into the Pepito folder:
+		
+		FileCopy(sourceFile, targetFile)
+
+	Next cnfFile
+	
+End Sub
+
+Sub reset_pepito
+&apos; Remove localized configuration files from the Pepito Cleaner location,
+&apos; if originally placed by poemenia
+
+	oPackageInfoProvider = GetDefaultContext.getByName(&quot;/singletons/com.sun.star.deployment.PackageInformationProvider&quot;)
+	tPackageLocation = oPackageInfoProvider.getPackageLocation(&quot;PepitoCleaner.addon&quot;)
+    
+	Dim targetPath, markerFile, languageFile As String
+
+	targetPath = ConvertFromURL(tPackageLocation + &quot;/&quot;)
+	markerFile = targetPath + &quot;poemenia.txt&quot;
+
+	Dim cnfFile, targetFile, backupFile As String
+    Dim file_no As Integer
+	
+	&apos; Has this pepito installation been touched by poemenia?
+
+	If FileExists(markerFile) Then
+        file_no = FreeFile
+        Open markerFile For Input As #file_no
+        Line Input #file_no, languageFile
+        Close #file_no		
+	
+		Kill(markerFile)
+
+		Dim cnfFiles(2) As String
+		cnfFiles(0) = languageFile
+		cnfFiles(1) = &quot;preference.txt&quot;
+		cnfFiles(2) = &quot;RegEx_general.txt&quot; 
+
+		&apos; Remove localized configuration files
+		
+		For Each cnfFile in cnfFiles
+		
+			targetFile = targetPath + cnfFile
+			backupFile = targetFile + &quot;.bak&quot;
+	
+			&apos; Delete the localized file, if existent:
+		
+			If FileExists(targetFile) Then
+				Kill(targetFile)
+				
+			End If
+			
+			&apos; Restore backup, if existent:
+			
+			If FileExists(backupFile) Then
+				Name backupFile As targetFile		
+			
+			End If
+		
+		Next cnfFile	
+		
+	End If
+
+End Sub
+</script:module>
