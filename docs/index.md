@@ -13,7 +13,7 @@
 
 ## Herunterladen und installieren
 
-* [Herunterladen (poemenia-0.1.7.oxt)](https://raw.githubusercontent.com/peter88213/emph/main/poemenia-0.1.7.oxt)
+* [Herunterladen (poemenia-0.1.7.oxt)](https://raw.githubusercontent.com/peter88213/poemenia/main/poemenia-0.1.7.oxt)
 
 * Installation direkt beim Download, durch Doppelklick auf die heruntergeladene Datei, oder über den OpenOffice Extension Manager.
 
