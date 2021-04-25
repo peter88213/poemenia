@@ -1,5 +1,5 @@
 
-[Project homepage](https://peter88213.github.io/poemenia/)
+[Projekt-Homepage](https://peter88213.github.io/poemenia/)
 
 ## Anwendungshinweise für die  _poemenia_ -Erweiterung
 
@@ -14,7 +14,7 @@ Die Konfiguration der Suchmuster wird gesichert und durch die Konfiguration von 
 
 Nach erfolgreicher Beendigung erscheint eine Meldung.
 
-![](Screenshots/messageSet.png)
+![](Screenshots/MessageSet.png)
 
 ## Spracheinstellungen für Pepito Cleaner zurücksetzen
 
@@ -24,7 +24,7 @@ Damit wird die Benutzeroberfläche auf die zuvor eingestellte Sprache gesetzt. D
 
 Nach erfolgreicher Beendigung erscheint eine Meldung.
 
-![](Screenshots/messageReset.png)
+![](Screenshots/MessageReset.png)
 
 ## Hilfe
 
