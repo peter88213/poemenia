@@ -11,7 +11,7 @@ Sub show_help
 	oPackageInfoProvider = GetDefaultContext.getByName(&quot;/singletons/com.sun.star.deployment.PackageInformationProvider&quot;)
 	sPackageLocation = oPackageInfoProvider.getPackageLocation(&quot;org.peter88213.poemenia&quot;)	
 	launcher = CreateUnoService(&quot;com.sun.star.system.SystemShellExecute&quot;)
-	aWebPage = sPackageLocation + &quot;/help/help-en.html&quot;
+	aWebPage = sPackageLocation + &quot;/help/help.html&quot;
 	launcher.execute(aWebPage, &quot;&quot;, 0)
 End Sub
 

@@ -9,19 +9,28 @@ Sub localize_pepito(languageCode, countryCode)
 	sPackageLocation = oPackageInfoProvider.getPackageLocation(&quot;org.peter88213.poemenia&quot;)
 	tPackageLocation = oPackageInfoProvider.getPackageLocation(&quot;PepitoCleaner.addon&quot;)
     
+    &apos; Is Pepito Cleaner installed?
+    
+	If tPackageLocation = &quot;&quot; Then
+		MsgBox &quot;Pepito Cleaner seems not to be installed.&quot;, MB_ICONSTOP
+		Exit Sub
+		
+	End If
+	
 	langFolder = languageCode + &quot;-&quot; + countryCode
 
 	Dim sourcePath, targetPath, markerFile, languageFile As String
 
 	sourcePath = ConvertFromURL(sPackageLocation + &quot;/&quot; + langFolder + &quot;/&quot;)
 	targetPath = ConvertFromURL(tPackageLocation + &quot;/&quot;)
+	
 	markerFile = targetPath + &quot;poemenia.txt&quot;
 	languageFile = &quot;language_&quot; + languageCode + &quot;.txt&quot;
 	
 	&apos; Is Pepito Cleaner already localized by poemenia?
 	
 	If FileExists(markerFile) Then
-		common.reset_pepito()
+		common.reset_pepito(True)
 		
 	End If
 
@@ -60,15 +69,25 @@ Sub localize_pepito(languageCode, countryCode)
 
 	Next cnfFile
 	
+	MsgBox &quot;Pepito Cleaner is now set to &apos;&quot; +languageCode + &quot;-&quot; + countryCode + &quot;&apos;.&quot;
+	
 End Sub
 
-Sub reset_pepito
+Sub reset_pepito(Optional silent As Boolean)
 &apos; Remove localized configuration files from the Pepito Cleaner location,
 &apos; if originally placed by poemenia
 
 	oPackageInfoProvider = GetDefaultContext.getByName(&quot;/singletons/com.sun.star.deployment.PackageInformationProvider&quot;)
 	tPackageLocation = oPackageInfoProvider.getPackageLocation(&quot;PepitoCleaner.addon&quot;)
+
+    &apos; Is Pepito Cleaner installed?
     
+	If tPackageLocation = &quot;&quot; Then
+		MsgBox &quot;Pepito Cleaner seems not to be installed.&quot;, MB_ICONSTOP
+		Exit Sub
+		
+	End If
+	    
 	Dim targetPath, markerFile, languageFile As String
 
 	targetPath = ConvertFromURL(tPackageLocation + &quot;/&quot;)
@@ -114,7 +133,12 @@ Sub reset_pepito
 			End If
 		
 		Next cnfFile	
+	
+	If IsMissing(silent) Then
+		MsgBox &quot;Previous Pepito Cleaner settings are restored.&quot;
 		
+	End If
+	
 	End If
 
 End Sub

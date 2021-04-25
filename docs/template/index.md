@@ -1,39 +1,38 @@
-![Screenshot: toolbar](Screenshots/Toolbar00-en.png)
+# German language pack for Pepito Cleaner -- Deutsches Sprachpaket für Pepito Cleaner
+
+![Screenshot: poemenia menu](Screenshots/menu-de.png)
 
 
-For the body text of fiction such as novels or short stories, "integrated" markup styles are commonly used that are not immediately eye-catching, but only as you read: the "emphasis" using italics and the "strong emphasis" using small caps.
+[Pepito Cleaner](https://pepitoweb.altervista.org/pepito_cleaner/index.php) ist eine praktische Erweiterung für OpenOffice 3/4, mit der man gängige Fehler, wie sie z.B. bei der Extraktion von Texten aus PDF-Dokumenten entstehen, aufspüren und korrigieren kann. Das geschieht überwiegend mit Suchmustern, sogenannten regulären Ausdrücken. Die voreingestellten regulären Ausdrücke in Pepito Cleaner erkennen hochgestellte Anführungszeichen, wie sie in den USA üblich sind, außerdem  _Guillemets_  wie z.B. in Italien und in der Schweiz verwendet. Damit Pepito Cleaner die in Deutschland und Österreich gebräuchlichen Gänsefüßchen („...“) und Chevrons (»...«) als öffnende und schließende Anführungszeichen erkennt, muss der Benutzer die regulären Ausdrücke selbst ändern. Solche Änderungen erfordern allerdings Fachwissen und sind nicht leicht auf andere Installationen zu übertragen. Außerdem gehen sie bei einem Update von Pepito Cleaner wieder verloren. Die  _poemenia_ -Erweiterung hilft diesem Problem ab, indem sie vorgefertigte Konfigurationsdateien in das Installationsverzeichnis von Pepito Cleaner kopiert und ihn damit eindeutscht. Vorhandene Konfigurationsdateien werden dabei gesichert, damit die Eindeutschung auch wieder rückgängig gemacht werden kann.
 
-_Writer_   supports this by providing character styles that you can customize yourself and use instead of direct formatting with, for example, "Bold" and "Italic". You might wish to quickly mark up the text while writing without having to go to the selection list of character styles each time. This extension provides a toolbar to quickly assign the "Emphasis" and "Strong Emphasis" character styles.
+## Systemanforderungen
 
-## System requirements
+* __OpenOffice.org 3.x__  oder  __Apache OpenOffice 4.x__
+* __Pepito Cleaner__  muss installiert sein.
+* __Java__ (OpenOffice benötigt es zur Makroausführung)
 
-* __OpenOffice.org 3.x__  or  __Apache OpenOffice 4.x__
-* __Java__ (OpenOffice needs it for macro execution)
+## Herunterladen und installieren
 
-## Download and install
+* [Herunterladen (poemenia-0.99.0.oxt)](https://raw.githubusercontent.com/peter88213/emph/main/poemenia-0.99.0.oxt)
 
-Download the extension variant that matches your Office installation:
+* Installation direkt beim Download, durch Doppelklick auf die heruntergeladene Datei, oder über den OpenOffice Extension Manager.
 
-[Apache OpenOffice 4.x variant (emph-A-0.99.0.oxt)](https://raw.githubusercontent.com/peter88213/emph/master/emph-A-0.99.0.oxt)
+* Nach der Installation (und dem Neustart von Office) finden Sie im Menü  __Extras/Add-ons__  ein neues Untermenü.
 
-[OpenOffice.org 3.x variant (emph-0.99.0.oxt)](https://raw.githubusercontent.com/peter88213/emph/master/emph-0.99.0.oxt)
-
-* Installation right at download, by double-clicking on the downloaded file, or via the OpenOffice Extension Manager.
-
-* After installation (and Office restart) you find a toolbar.
-
-[Changelog](changelog)
+[Änderungshistorie](changelog)
 
 
-## Usage
+## Benutzung
 
-See the [instructions for use](help-en)
+Siehe [Benutzungshinweise](help-de)
 
 ## CREDITS
+
+[Pepito Cleaner](https://pepitoweb.altervista.org/pepito_cleaner/index.php)
 
 [OpenOffice Extension Compiler](https://wiki.openoffice.org/wiki/Extensions_Packager#Extension_Compiler) by Bernard Marcelly.
 
 
 ## License
 
-This extension is distributed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
+Diese Erweiterung steht unter der [MIT License](http://www.opensource.org/licenses/mit-license.php).
