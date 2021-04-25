@@ -7,7 +7,7 @@
 
 Die voreingestellten regulären Ausdrücke in Pepito Cleaner erkennen hochgestellte Anführungszeichen, wie sie in den USA üblich sind, außerdem  _Guillemets_  wie z.B. in Italien und in der Schweiz verwendet. Damit Pepito Cleaner die in Deutschland und Österreich gebräuchlichen Gänsefüßchen („...“) und Chevrons (»...«) als öffnende und schließende Anführungszeichen erkennt, muss der Benutzer die regulären Ausdrücke selbst ändern. Solche Änderungen erfordern allerdings Fachwissen und sind nicht leicht auf andere Installationen zu übertragen. Außerdem gehen sie bei einem Update oder einer erneuten Installation von Pepito Cleaner wieder verloren. 
 
-Die  _poemenia_ -Erweiterung hilft diesem Problem ab, indem sie vorgefertigte Konfigurationsdateien in das Installationsverzeichnis von Pepito Cleaner kopiert und ihn damit eindeutscht. Vorhandene Konfigurationsdateien werden dabei gesichert, damit die Eindeutschung auch wieder rückgängig gemacht werden kann.
+Die  _poemenia_ -Erweiterung hilft diesem Problem ab, indem sie vorgefertigte Konfigurationsdateien in das Installationsverzeichnis von Pepito Cleaner kopiert und ihn damit lokalisiert. Vorhandene Konfigurationsdateien werden dabei gesichert, damit die Lokalisierung auch wieder rückgängig gemacht werden kann.
 
 ## Systemanforderungen
 
