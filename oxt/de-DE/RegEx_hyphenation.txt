@@ -1,0 +1,1 @@
+CT_RegEx 0.003<RegEx>KEY|RE_DEFAULT_HY_001VSB|TrueTYP|3FND|([:alnum:]+)-([:alnum:]+)TXT|Klassische WorttrennungISR|TrueSNS|FalseDUA|FalseLB1|MD1|1RP1|DR1|LSL1|0LB2|MD2|1RP2|DR2|LSL2|0</RegEx>

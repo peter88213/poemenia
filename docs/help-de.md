@@ -1,16 +1,24 @@
 
 [Projekt-Homepage](https://peter88213.github.io/poemenia/)
 
-## Anwendungshinweise für die  _poemenia_ -Erweiterung
+# Anwendungshinweise für die poemenia-Erweiterung
+
+
+## Vor dem Aufruf von poemenia
+
+__Achten Sie unbedingt darauf, dass das Programmfenster von Pepito Cleaner geschlossen ist!__
+
+![](Screenshots/Close-Pepito.png)
 
 
 ## Sprache für Pepito Cleaner zu "de-DE" setzen
+
 
 ![](Screenshots/menu-set-de.png)
 
 Damit wird die Benutzeroberfläche eingedeutscht. Außerdem berücksichtigt Pepito Cleaner Anführungszeichen nach den Regeln für Deutschland und Österreich. Es sind Gänsefüßchen („...“) oder Chevrons (»...«) möglich.
 
-Die Konfiguration der Suchmuster wird gesichert und durch die Konfiguration von  _poemenia_  ersetzt.
+Die Konfiguration der Suchmuster wird gesichert und durch die Konfiguration von poemenia ersetzt.
 
 Nach erfolgreicher Beendigung erscheint eine Meldung.
 

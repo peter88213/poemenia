@@ -42,10 +42,13 @@ Sub localize_pepito(languageCode, countryCode)
 	Close #file_no
 	
 
-	Dim cnfFiles(2) As String
+	Dim cnfFiles(5) As String
 	cnfFiles(0) = languageFile
 	cnfFiles(1) = &quot;preference.txt&quot;
 	cnfFiles(2) = &quot;RegEx_general.txt&quot; 
+	cnfFiles(3) = &quot;RegEx_hyphenation.txt&quot; 
+	cnfFiles(4) = &quot;RegEx_warning.txt&quot; 
+	cnfFiles(5) = &quot;RegEx_header.txt&quot; 
 
 
 	Dim cnfFile, sourceFile, targetFile, backupFile As String
@@ -106,10 +109,13 @@ Sub reset_pepito(Optional silent As Boolean)
 	
 		Kill(markerFile)
 
-		Dim cnfFiles(2) As String
+		Dim cnfFiles(5) As String
 		cnfFiles(0) = languageFile
 		cnfFiles(1) = &quot;preference.txt&quot;
 		cnfFiles(2) = &quot;RegEx_general.txt&quot; 
+		cnfFiles(3) = &quot;RegEx_hyphenation.txt&quot; 
+		cnfFiles(4) = &quot;RegEx_warning.txt&quot; 
+		cnfFiles(5) = &quot;RegEx_header.txt&quot; 
 
 		&apos; Remove localized configuration files
 		
