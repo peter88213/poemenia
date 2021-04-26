@@ -6,7 +6,7 @@
 
 Sub localize_pepito
 
-	common.localize_pepito(&quot;de&quot;, &quot;DE&quot;)
+	common.localize_pepito(&quot;de-DE&quot;)
 
 End Sub
 </script:module>

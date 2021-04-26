@@ -32,7 +32,7 @@ Siehe [Benutzungshinweise](help-de)
 
 ## CREDITS
 
-[Pepito Cleaner](https://pepitoweb.altervista.org/pepito_cleaner/index.php)
+[Pepito Cleaner](https://pepitoweb.altervista.org/pepito_cleaner/index.php) by the Guys From Italy
 
 [OpenOffice Extension Compiler](https://wiki.openoffice.org/wiki/Extensions_Packager#Extension_Compiler) by Bernard Marcelly.
 

@@ -2,7 +2,8 @@
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="common" script:language="StarBasic">REM  *****  BASIC  *****
 
-Sub localize_pepito(languageCode, countryCode)
+
+Sub localize_pepito(cnfDir)
 &apos; Copy localized configuration files to the Pepito Cleaner location
 
 	oPackageInfoProvider = GetDefaultContext.getByName(&quot;/singletons/com.sun.star.deployment.PackageInformationProvider&quot;)
@@ -13,66 +14,63 @@ Sub localize_pepito(languageCode, countryCode)
     
 	If tPackageLocation = &quot;&quot; Then
 		MsgBox &quot;Pepito Cleaner seems not to be installed.&quot;, MB_ICONSTOP
-		Exit Sub
+		rem Exit Sub
 		
 	End If
 	
-	langFolder = languageCode + &quot;-&quot; + countryCode
+	Dim sourcePath, targetPath, iniFile As String
 
-	Dim sourcePath, targetPath, markerFile, languageFile As String
-
-	sourcePath = ConvertFromURL(sPackageLocation + &quot;/&quot; + langFolder + &quot;/&quot;)
+	sourcePath = ConvertFromURL(sPackageLocation + &quot;/&quot; + cnfDir + &quot;/&quot;)
 	targetPath = ConvertFromURL(tPackageLocation + &quot;/&quot;)
-	
-	markerFile = targetPath + &quot;poemenia.txt&quot;
-	languageFile = &quot;language_&quot; + languageCode + &quot;.txt&quot;
 	
 	&apos; Is Pepito Cleaner already localized by poemenia?
 	
-	If FileExists(markerFile) Then
+	iniFile = targetPath + &quot;poemenia.ini&quot;
+
+	If FileExists(iniFile) Then
 		common.reset_pepito(True)
 		
 	End If
 
-	&apos; Create a marker
-	
-    file_no = FreeFile
-	Open markerFile For Output As #file_no
-	Print #file_no, languageFile
-	Close #file_no
-	
-
-	Dim cnfFiles(5) As String
-	cnfFiles(0) = languageFile
-	cnfFiles(1) = &quot;preference.txt&quot;
-	cnfFiles(2) = &quot;RegEx_general.txt&quot; 
-	cnfFiles(3) = &quot;RegEx_hyphenation.txt&quot; 
-	cnfFiles(4) = &quot;RegEx_warning.txt&quot; 
-	cnfFiles(5) = &quot;RegEx_header.txt&quot; 
-
-
+	Dim NextFile As String
+	Dim AllFiles As String
+	Dim fileNo As Integer
 	Dim cnfFile, sourceFile, targetFile, backupFile As String
 	
-	For Each cnfFile in cnfFiles
+	&apos; Create ini file in the Pepito folder
 	
+    fileNo = FreeFile
+	Open iniFile For Output As #fileNo
+
+	cnfFile = Dir(sourcePath, 0)
+	
+	While cnfFile  &lt;&gt; &quot;&quot;
+	
+		&apos;Write config filename to ini file
+	
+ 		Print #fileNo, cnfFile
+ 		
 		sourceFile = sourcePath + cnfFile
 		targetFile = targetPath + cnfFile
 		backupFile = targetFile + &quot;.bak&quot;
 
-		&apos; Back up the original file, if existent:
+		&apos; Back up the original file, if existent
 	
 		If FileExists(targetFile) And Not FileExists(backupFile) Then
 			Name targetFile As backupFile
 			
 		End If
 		
-		&apos; Put the localized file into the Pepito folder:
+		&apos; Copy config file to Pepito folder
 		
 		FileCopy(sourceFile, targetFile)
-
-	Next cnfFile
+		
+		cnfFile = Dir
+	Wend
 	
-	MsgBox &quot;Pepito Cleaner is now set to &apos;&quot; +languageCode + &quot;-&quot; + countryCode + &quot;&apos;.&quot;
+	Close #fileNo
+
+	MsgBox &quot;Pepito Cleaner is now set to &apos;&quot; + cnfDir + &quot;&apos;.&quot;
 	
 End Sub
 
@@ -91,40 +89,28 @@ Sub reset_pepito(Optional silent As Boolean)
 		
 	End If
 	    
-	Dim targetPath, markerFile, languageFile As String
+	Dim targetPath, iniFile, cnfFile, targetFile, backupFile As String
 
 	targetPath = ConvertFromURL(tPackageLocation + &quot;/&quot;)
-	markerFile = targetPath + &quot;poemenia.txt&quot;
+	iniFile = targetPath + &quot;poemenia.ini&quot;
 
-	Dim cnfFile, targetFile, backupFile As String
-    Dim file_no As Integer
+    Dim fileNo As Integer
 	
 	&apos; Has this pepito installation been touched by poemenia?
 
-	If FileExists(markerFile) Then
-        file_no = FreeFile
-        Open markerFile For Input As #file_no
-        Line Input #file_no, languageFile
-        Close #file_no		
+	If FileExists(iniFile) Then
 	
-		Kill(markerFile)
+		&apos; Remove config files listed in the ini file
 
-		Dim cnfFiles(5) As String
-		cnfFiles(0) = languageFile
-		cnfFiles(1) = &quot;preference.txt&quot;
-		cnfFiles(2) = &quot;RegEx_general.txt&quot; 
-		cnfFiles(3) = &quot;RegEx_hyphenation.txt&quot; 
-		cnfFiles(4) = &quot;RegEx_warning.txt&quot; 
-		cnfFiles(5) = &quot;RegEx_header.txt&quot; 
-
-		&apos; Remove localized configuration files
-		
-		For Each cnfFile in cnfFiles
-		
+        fileNo = FreeFile
+        Open iniFile For Input As #fileNo
+        
+        Do While not eof(FileNo)
+        	Line Input #fileNo, cnfFile
 			targetFile = targetPath + cnfFile
 			backupFile = targetFile + &quot;.bak&quot;
 	
-			&apos; Delete the localized file, if existent:
+			&apos; Delete the config file, if existent:
 		
 			If FileExists(targetFile) Then
 				Kill(targetFile)
@@ -138,12 +124,16 @@ Sub reset_pepito(Optional silent As Boolean)
 			
 			End If
 		
-		Next cnfFile	
+		Loop
+
+        Close #fileNo		
 	
-	If IsMissing(silent) Then
-		MsgBox &quot;Previous Pepito Cleaner settings are restored.&quot;
-		
-	End If
+		Kill(iniFile)
+	
+		If IsMissing(silent) Then
+			MsgBox &quot;Previous Pepito Cleaner settings are restored.&quot;
+			
+		End If
 	
 	End If
 
