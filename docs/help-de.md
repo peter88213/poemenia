@@ -16,7 +16,7 @@ __Achten Sie unbedingt darauf, dass das Programmfenster von Pepito Cleaner gesch
 
 ![](Screenshots/menu-set-de.png)
 
-Damit wird die Benutzeroberfläche eingedeutscht. Außerdem berücksichtigt Pepito Cleaner Anführungszeichen nach den Regeln für Deutschland und Österreich. Es sind Gänsefüßchen („...“) oder Chevrons (»...«) möglich.
+Damit wird die Benutzeroberfläche deutschsprachig. Außerdem berücksichtigt Pepito Cleaner deutsche Interpunktionsregeln und erkennt Anführungszeichen, die in Deutschland und Österreich üblich sind. Es sind Gänsefüßchen („...“) oder Chevrons (»...«) möglich.
 
 Die Konfiguration der Suchmuster wird gesichert und durch die Konfiguration von poemenia ersetzt.
 
@@ -28,7 +28,7 @@ Nach erfolgreicher Beendigung erscheint eine Meldung.
 
 ![](Screenshots/menu-reset-de.png)
 
-Damit wird die Benutzeroberfläche auf die zuvor eingestellte Sprache gesetzt. Die zuvor konfigurierten Suchmuster werden wiederhergestellt.
+Damit wird die Benutzeroberfläche auf die zuvor eingestellte Sprache gesetzt. Die zuvor konfigurierten "regex"-Suchmuster werden wiederhergestellt.
 
 Nach erfolgreicher Beendigung erscheint eine Meldung.
 
