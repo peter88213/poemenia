@@ -13,8 +13,8 @@ Sub localize_pepito(cnfDir)
     &apos; Is Pepito Cleaner installed?
     
 	If tPackageLocation = &quot;&quot; Then
-		MsgBox &quot;Pepito Cleaner seems not to be installed.&quot;, MB_ICONSTOP
-		rem Exit Sub
+		MsgBox &quot;Pepito Cleaner seems not to be installed.&quot;, MB_ICONSTOP, &quot;poemenia&quot;
+		Exit Sub
 		
 	End If
 	
@@ -32,8 +32,6 @@ Sub localize_pepito(cnfDir)
 		
 	End If
 
-	Dim NextFile As String
-	Dim AllFiles As String
 	Dim fileNo As Integer
 	Dim cnfFile, sourceFile, targetFile, backupFile As String
 	
@@ -70,7 +68,7 @@ Sub localize_pepito(cnfDir)
 	
 	Close #fileNo
 
-	MsgBox &quot;Pepito Cleaner is now set to &apos;&quot; + cnfDir + &quot;&apos;.&quot;
+	MsgBox &quot;Pepito Cleaner is now set to &apos;&quot; + cnfDir + &quot;&apos;.&quot;, MB_ICONINFORMATION, &quot;poemenia&quot;
 	
 End Sub
 
@@ -84,7 +82,7 @@ Sub reset_pepito(Optional silent As Boolean)
     &apos; Is Pepito Cleaner installed?
     
 	If tPackageLocation = &quot;&quot; Then
-		MsgBox &quot;Pepito Cleaner seems not to be installed.&quot;, MB_ICONSTOP
+		MsgBox &quot;Pepito Cleaner seems not to be installed.&quot;, MB_ICONSTOP, &quot;poemenia&quot;
 		Exit Sub
 		
 	End If
@@ -131,7 +129,7 @@ Sub reset_pepito(Optional silent As Boolean)
 		Kill(iniFile)
 	
 		If IsMissing(silent) Then
-			MsgBox &quot;Previous Pepito Cleaner settings are restored.&quot;
+			MsgBox &quot;Previous Pepito Cleaner settings are restored.&quot;, MB_ICONINFORMATION, &quot;poemenia&quot;
 			
 		End If
 	
