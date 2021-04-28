@@ -3,11 +3,13 @@
 ![Screenshot: poemenia menu](Screenshots/menu-de.png)
 
 
-[Pepito Cleaner](https://pepitoweb.altervista.org/pepito_cleaner/index.php) ist eine praktische Erweiterung für OpenOffice 3/4, mit der man gängige Fehler, wie sie z.B. bei der Extraktion von Texten aus PDF-Dokumenten entstehen, aufspüren und korrigieren kann. Das geschieht überwiegend mit Suchmustern, sogenannten regulären Ausdrücken. 
+[Pepito Cleaner](https://pepitoweb.altervista.org/pepito_cleaner/index.php) ist eine praktische Erweiterung für OpenOffice 3/4, mit der man gängige Fehler, wie sie z.B. bei Scans oder bei der Extraktion von Texten aus PDF-Dokumenten entstehen, aufspüren und korrigieren kann. Das geschieht überwiegend mit Suchmustern, sogenannten regulären Ausdrücken. 
 
 Die voreingestellten regulären Ausdrücke in Pepito Cleaner erkennen hochgestellte Anführungszeichen, wie sie in den USA üblich sind, außerdem  _Guillemets_  wie z.B. in Italien und in der Schweiz verwendet. Damit Pepito Cleaner die in Deutschland und Österreich gebräuchlichen Gänsefüßchen („...“) und Chevrons (»...«) als öffnende und schließende Anführungszeichen erkennt, muss der Benutzer die regulären Ausdrücke selbst ändern. Solche Änderungen erfordern allerdings Fachwissen und sind nicht leicht auf andere Installationen zu übertragen. Außerdem gehen sie bei einem Update oder einer erneuten Installation von Pepito Cleaner wieder verloren. 
 
 Die  _poemenia_ -Erweiterung hilft diesem Problem ab, indem sie vorgefertigte Konfigurationsdateien in das Installationsverzeichnis von Pepito Cleaner kopiert und ihn damit lokalisiert. Vorhandene Konfigurationsdateien werden dabei gesichert, damit die Lokalisierung auch wieder rückgängig gemacht werden kann.
+
+Das "de-DE"-Sprachpaket von poemenia übersetzt die Benutzeroberfläche von Pepito Cleaner (soweit möglich) und passt das Verhalten an die in Deutschland und Österreich üblichen Interpunktionsregeln an. Die Überprüfungsregeln enthalten einige Zusätze für die Setzung von Apostrophen und unterschiedlichen Anführungszeichen.
 
 ## Systemanforderungen
 
