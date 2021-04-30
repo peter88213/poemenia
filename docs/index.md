@@ -19,7 +19,7 @@ Das "de-DE"-Sprachpaket von poemenia übersetzt die Benutzeroberfläche von Pepi
 
 ## Herunterladen und installieren
 
-* [Herunterladen (poemenia-0.2.0.oxt)](https://raw.githubusercontent.com/peter88213/poemenia/main/poemenia-0.2.0.oxt)
+* [Herunterladen (poemenia-0.2.1.oxt)](https://raw.githubusercontent.com/peter88213/poemenia/main/poemenia-0.2.1.oxt)
 
 * Installation direkt beim Download, durch Doppelklick auf die heruntergeladene Datei, oder über den OpenOffice Extension Manager.
 
