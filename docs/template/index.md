@@ -9,7 +9,7 @@ Die voreingestellten regulären Ausdrücke in Pepito Cleaner erkennen hochgestel
 
 Die  _poemenia_ -Erweiterung hilft diesem Problem ab, indem sie vorgefertigte Konfigurationsdateien in das Installationsverzeichnis von Pepito Cleaner kopiert und ihn damit lokalisiert. Vorhandene Konfigurationsdateien werden dabei gesichert, damit die Lokalisierung auch wieder rückgängig gemacht werden kann.
 
-Das "de-DE"-Sprachpaket von poemenia übersetzt die Benutzeroberfläche von Pepito Cleaner (soweit möglich) und passt das Verhalten an die in Deutschland und Österreich üblichen Interpunktionsregeln an. Poemenias Überprüfungsregeln enthalten einige Zusätze, z.B. für die korrekte Setzung von Apostrophen und unterschiedlichen Anführungszeichen.
+Das "de-DE"-Sprachpaket von poemenia übersetzt die Benutzeroberfläche von Pepito Cleaner (soweit möglich) und passt das Verhalten an die in Deutschland und Österreich üblichen Interpunktionsregeln an. Poemenias Überprüfungsregeln enthalten einige Zusätze, z.B. für die korrekte Setzung von Apostrophen, Gedankenstrichen und unterschiedlichen Anführungszeichen.
 
 ## Systemanforderungen
 
