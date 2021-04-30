@@ -1,4 +1,4 @@
-Pepito Cleaner ist eine praktische Erweiterung, mit der man gängige Fehler, wie sie z.B. bei Scans oder bei der Extraktion von Texten aus PDF-Dokumenten entstehen, aufspüren und korrigieren kann. Das geschieht überwiegend mit konfigurierbaren Suchmustern, sogenannten regulären Ausdrücken. 
+Pepito Cleaner ist eine überaus praktische Erweiterung, mit der man gängige Fehler, wie sie z.B. bei Scans oder bei der Extraktion von Texten aus PDF-Dokumenten entstehen, aufspüren und korrigieren kann. Das geschieht überwiegend mit konfigurierbaren Suchmustern, sogenannten regulären Ausdrücken. 
 
 Die auf der OpenOffice-Erweiterungen-Website angebotene Version ist veraltet; eine aktuelle Version kann man auf der Projekt-Homepage herunterladen:
 https://pepitoweb.altervista.org/pepito_cleaner/index.php

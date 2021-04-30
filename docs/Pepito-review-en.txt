@@ -1,4 +1,4 @@
-Pepito Cleaner is a handy extension that can be used to detect and correct common errors, such as those that occur with scanning or when extracting text from PDF documents. This is done mainly with configurable search patterns, so-called regular expressions. 
+Pepito Cleaner is an extremely handy extension that can be used to detect and correct common errors, such as those that occur with scanning or when extracting text from PDF documents. This is done mainly with configurable search patterns, so-called regular expressions. 
 
 The version offered on the OpenOffice extensions website is outdated; a current version can be downloaded from the project homepage:
 https://pepitoweb.altervista.org/pepito_cleaner/index.php
