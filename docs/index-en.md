@@ -15,7 +15,7 @@ The "de-DE" language package of poemenia translates the user interface of Pepito
 
 ## Other languages
 
-Although there is currently only a German language pack available,  _poemenia_  can also add further language packs thanks to its modular structure.
+Although currently only one German language pack is available, you can add more language packs to _poemenia_ thanks to its modular structure. You can find instructions on how to do this on the [project page](https://github.com/peter88213/poemenia).
 
 ## System requirements
 

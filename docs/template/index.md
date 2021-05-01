@@ -13,6 +13,10 @@ Die  _poemenia_ -Erweiterung hilft diesem Problem ab, indem sie vorgefertigte Ko
 
 Das "de-DE"-Sprachpaket von poemenia übersetzt die Benutzeroberfläche von Pepito Cleaner (soweit möglich) und passt das Verhalten an die in Deutschland und Österreich üblichen Interpunktionsregeln an. Poemenias Überprüfungsregeln enthalten einige Zusätze, z.B. für die korrekte Setzung von Apostrophen, Gedankenstrichen und unterschiedlichen Anführungszeichen.
 
+## Weitere Sprachen
+
+Obwohl derzeit nur ein deutsches Sprachpaket verfügbar ist, kann man _poemenia_ dank des modularen Aufbaus auch weitere Sprachpakete hinzufügen. Eine Anleitung dazu finden Sie auf der [Projektseite](https://github.com/peter88213/poemenia).
+
 ## Systemanforderungen
 
 * __OpenOffice.org 3.x__  oder  __Apache OpenOffice 4.x__
