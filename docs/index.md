@@ -1,6 +1,6 @@
 [English](index-en)
 
-# German language pack for Pepito Cleaner -- Deutsches Sprachpaket für Pepito Cleaner
+# Die poemenia-Erweiterung für OpenOffice mit einem deutschen Sprachpaket für Pepito Cleaner
 
 ![Screenshot: poemenia menu](Screenshots/menu-de.png)
 
