@@ -56,7 +56,7 @@ Now create a language module file named `xx_YY.xba`:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
-<script:module xmlns:script="http://openoffice.org/2000/script" script:name="de_DE" script:language="StarBasic">REM  *****  BASIC  *****
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="xx_YY" script:language="StarBasic">REM  *****  BASIC  *****
 
 &apos; Copy xx-YY localized configuration files to the Pepito Cleaner location
 
