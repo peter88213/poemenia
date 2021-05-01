@@ -24,7 +24,7 @@ Currently the  _de-DE_  option is available, suitable for Germany and Austria. H
 
 1. Reset the  _Pepito Cleaner_  language if you want to start with English user interface and regex descriptions.
 2. Use Pepito Cleaner's built-in RegEx editor to customize and extend the regular expressions. Translate the existing descriptions into your language.
-3. Open Pepito cleaner's Language Window and create your own language file, e.g.  __language_xx-YY__ . Translate the user interface text entries.
+3. Open Pepito Cleaner's  __Language__  window and create your own language file, e.g.  __language_xx-YY__ . Translate the user interface text entries.
 4. Set Pepito Cleaner to your language, and test your customizazions and RegEx thoroughly.
 
 Your customized files are located in the  _extension directory_ , visible by clicking on  __Show extension path__  in the  __Options__ . They all have the extension `.txt`.  
