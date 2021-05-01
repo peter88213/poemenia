@@ -49,7 +49,7 @@ Now export these files to your  _poemenia_  project.
 2. Copy the files listed above from the  _Pepito Cleaner_  extension directory to the  _poemenia_  `xx-YY` subdirectory.
 3. Move to the `poemenia` subdirectory in the project's `oxt` folder.
 
-Now create a language module file named `xx_YY.xba` to the directory: 
+Now create a language module file named `xx_YY.xba`: 
 
 #### xx_YY.xba
 
@@ -68,7 +68,7 @@ End Sub
 </script:module>
 ```
 
-Now register your language module. You do this by adding a line to `script.xlb`:
+Now add your language module to the library. You do this by adding a line to `script.xlb`:
 
 #### script.xlb
 
