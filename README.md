@@ -119,7 +119,7 @@ Append a menu entry to the existing language entries:
               setTitle("Sprache für Pepito Cleaner zu xx-YY setzen", "de")
               setTitle("Agordu la lingvon por Pepito Cleaner al xx-YY", "xx")
             endTitles
-            setURL("Basic", "poemenia", "de_DE", "localize_pepito")
+            setURL("Basic", "poemenia", "xx_YY", "localize_pepito")
 
 		endCommand
 		
