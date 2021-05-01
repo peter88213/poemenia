@@ -98,22 +98,22 @@ Append a menu entry to the existing language entries:
     beginMenu
     
       beginTitles
-	    setTitle("poemenia - Set Pepito Cleaner language", "en")
-	    setTitle("poemenia - Sprache für Pepito Cleaner einstellen", "de")
+        setTitle("poemenia - Set Pepito Cleaner language", "en")
+        setTitle("poemenia - Sprache für Pepito Cleaner einstellen", "de")
       endTitles
 
       beginMenuItems
 
-		beginCommand
+        beginCommand
             beginTitles()
               setTitle("Set Pepito Cleaner language to de-DE", "en")
               setTitle("Sprache für Pepito Cleaner zu de-DE setzen", "de")
             endTitles
             setURL("Basic", "poemenia", "de_DE", "localize_pepito")
 
-		endCommand
+        endCommand
 
-		beginCommand
+        beginCommand
             beginTitles()
               setTitle("Set Pepito Cleaner language to xx-YY", "en")
               setTitle("Sprache für Pepito Cleaner zu xx-YY setzen", "de")
@@ -121,9 +121,9 @@ Append a menu entry to the existing language entries:
             endTitles
             setURL("Basic", "poemenia", "xx_YY", "localize_pepito")
 
-		endCommand
-		
-		addSeparator
+        endCommand
+        
+        addSeparator
 
 ```
 
