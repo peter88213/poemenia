@@ -1,4 +1,4 @@
-[English](index)
+[English](index-en)
 
 # German language pack for Pepito Cleaner -- Deutsches Sprachpaket für Pepito Cleaner
 
