@@ -4,7 +4,7 @@ Localize the OpenOffice [Pepito Cleaner](https://pepitoweb.altervista.org/pepito
 
 Pepito Cleaner is a handy extension that can be used to detect and correct common errors, such as those that occur with scanning or when extracting text from PDF documents. This is done mainly with configurable search patterns, so-called regular expressions. 
 
-The default regular expressions in Pepito Cleaner recognize quotation marks as they are common in the USA, also  _guillemets_  as used for example in Italy and Switzerland. In order for Pepito Cleaner to recognize the in Germany and Austria commonly used inverted commas („…“) and chevrons (»…«) as opening and closing quotation marks, the user has to change the regular expressions himself. However, such changes require expertise and are not easy to transfer to other installations. Moreover, they will be lost again when Pepito Cleaner is updated or reinstalled.
+The regular expressions that come with Pepito cleaner are closely related to country-specific punctuation rules and are not suitable for all languages. They have to be adapted for Germany and Austria, for example. This has to be done by the user himself. However, such changes require expertise and are not easy to transfer to other installations. Moreover, they will be lost when Pepito Cleaner is updated or reinstalled.
 
 Since Pepito Cleaner seems to be no longer maintained, the developers are not identifiable, and the license terms of the software are unknown, I have programmed the extension  _poemenia_ , which helps to localize a Pepito Cleaner installation from the outside. 
 
@@ -45,9 +45,9 @@ Your customized files are:
 
 Now export these files to your  _poemenia_  project.
 
-1. Make a subdirectory `xx-YY`  in the project's `oxt` folder.
-2. Copy the files listed above from the  _Pepito Cleaner_  extension directory to the  _poemenia_  `xx-YY` subdirectory.
-3. Move to the `poemenia` subdirectory in the project's `oxt` folder.
+1. Make a subdirectory  __xx-YY__  in the project's  __oxt__  folder.
+2. Copy the files listed above from the  _Pepito Cleaner_  extension directory to the  _poemenia_   __xx-YY__  subdirectory.
+3. Open the  __poemenia__  subdirectory in the project's  __oxt__  folder.
 
 Now create a language module file named `xx_YY.xba`: 
 
@@ -85,9 +85,9 @@ Now add your language module to the library. You do this by adding a line to `sc
 
 ### Add a menu entry to poemenia
 
-This is done by opening the `poemenia.odt` extension compiler located in the project's `oxt` folder. It is strongly advised to learn how to use it by reading the document carefully. 
+This is done by opening the  __poemenia.odt__  extension compiler located in the project's  __oxt__ folder. It is strongly advised to learn how to use it by reading the document carefully. 
 
-1. Start OpenOffice with `poemenia.odt`. Allow macro execution.
+1. Start OpenOffice with  __poemenia.odt__ . Allow macro execution.
 2. Edit the Document's  __Standard/Module 1/myExtension__  macro.
 
 Append a menu entry to the existing language entries:
