@@ -1,9 +1,10 @@
 [English](index-en)
 
-# Die poemenia-Erweiterung für OpenOffice mit einem deutschen Sprachpaket für Pepito Cleaner
+--------------------------
 
 ![Screenshot: poemenia menu](Screenshots/menu-de.png)
 
+# Die poemenia-Erweiterung für OpenOffice mit einem deutschen Sprachpaket für Pepito Cleaner
 
 [Pepito Cleaner](https://pepitoweb.altervista.org/pepito_cleaner/index.php) ist eine überaus praktische Erweiterung für OpenOffice 3/4, mit der man gängige Fehler, wie sie z.B. bei Scans oder bei der Extraktion von Texten aus PDF-Dokumenten entstehen, aufspüren und korrigieren kann. Das geschieht überwiegend mit Suchmustern, sogenannten regulären Ausdrücken. 
 

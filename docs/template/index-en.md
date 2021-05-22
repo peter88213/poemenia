@@ -1,9 +1,10 @@
 [Deutsch](index)
 
-# The poemenia extension for OpenOffice with a German language pack for Pepito Cleaner
+--------------------------
 
 ![Screenshot: poemenia menu](Screenshots/menu-en.png)
 
+# The poemenia extension for OpenOffice with a German language pack for Pepito Cleaner
 
 [Pepito Cleaner](https://pepitoweb.altervista.org/pepito_cleaner/index.php) is an extremely handy extension that can be used to detect and correct common errors, such as those that occur with scanning or when extracting text from PDF documents. This is done mainly with configurable search patterns, so-called regular expressions. 
 
