@@ -26,7 +26,7 @@ Obwohl derzeit nur ein deutsches Sprachpaket verfügbar ist, kann man _poemenia_
 
 ## Herunterladen und installieren
 
-* [Herunterladen (poemenia-0.2.1.oxt)](https://raw.githubusercontent.com/peter88213/poemenia/main/poemenia-0.2.1.oxt)
+* [Herunterladen (poemenia-0.3.0.oxt)](https://raw.githubusercontent.com/peter88213/poemenia/main/poemenia-0.3.0.oxt)
 
 * Installation direkt beim Download, durch Doppelklick auf die heruntergeladene Datei, oder über den OpenOffice Extension Manager.
 

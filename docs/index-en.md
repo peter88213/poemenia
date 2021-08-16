@@ -26,7 +26,7 @@ Although currently only a German language pack is available, you can add more la
 
 ## Download an d install
 
-* [Download (poemenia-0.2.1.oxt)](https://raw.githubusercontent.com/peter88213/poemenia/main/poemenia-0.2.1.oxt)
+* [Download (poemenia-0.3.0.oxt)](https://raw.githubusercontent.com/peter88213/poemenia/main/poemenia-0.3.0.oxt)
 
 * Installation right at download, by double-clicking on the downloaded file, or via the OpenOffice/LibreOffice Extension Manager.
 
