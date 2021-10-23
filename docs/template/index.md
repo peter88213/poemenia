@@ -39,7 +39,11 @@ Obwohl derzeit nur ein deutsches Sprachpaket verfügbar ist, kann man _poemenia_
 
 Siehe [Benutzungshinweise](help-de)
 
-## CREDITS
+## Aktualisierungen erhalten
+
+Diese Extension unterstützt den Update-Mechanismus von OpenOffice. Sie können von Zeit zu Zeit den Extension Manager nach Updates suchen lassen, um das aktuelle Release zu erhalten. 
+
+## Credits
 
 [Pepito Cleaner](https://pepitoweb.altervista.org/pepito_cleaner/index.php) by the Guys From Italy
 
