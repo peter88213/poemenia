@@ -1,4 +1,4 @@
-# The poemenia extension for OpenOffice
+# The poemenia extension for OpenOffice and LibreOffice
 
 Localize the OpenOffice [Pepito Cleaner](https://pepitoweb.altervista.org/pepito_cleaner/index.php) extension. 
 
@@ -6,7 +6,7 @@ Pepito Cleaner is a handy extension that can be used to detect and correct commo
 
 The regular expressions that come with Pepito cleaner are closely related to country-specific punctuation rules and are not suitable for all languages. They have to be adapted for Germany and Austria, for example. This has to be done by the user himself. However, such changes require expertise and are not easy to transfer to other installations. Moreover, they will be lost when Pepito Cleaner is updated or reinstalled.
 
-Since Pepito Cleaner seems to be no longer maintained, the developers are not identifiable, and the license terms of the software are unknown, I have programmed the extension  _poemenia_ , which helps to localize a Pepito Cleaner installation from the outside. 
+Since Pepito Cleaner seems to be no longer maintained, the developers are not identifiable, and the license terms of the software are unknown, I have programmed the extension *poemenia*, which helps to localize a Pepito Cleaner installation from the outside. 
 
 
 ## Visit the project's home page
@@ -18,20 +18,20 @@ For a German translation, see the [project home page (German)](https://peter8821
 
 ## How to add a language pack
 
-Currently the  _de-DE_  option is available, suitable for Germany and Austria. However,  _poemenia_  can also add further language packs thanks to its modular structure.
+Currently the *de-DE* option is available, suitable for Germany and Austria. However, *poemenia* can also add further language packs thanks to its modular structure.
 
 ### Customize Pepito Cleaner
 
-1. Reset the  _Pepito Cleaner_  language if you want to start with English user interface and regex descriptions.
+1. Reset the *Pepito Cleaner* language if you want to start with English user interface and regex descriptions.
 2. Use Pepito Cleaner's built-in RegEx editor to customize and extend the regular expressions. Translate the existing descriptions into your language.
-3. Open Pepito Cleaner's  __Language__  window and create your own language file, e.g.  __language_xx-YY__ . Translate the user interface text entries.
+3. Open Pepito Cleaner's **Language** window and create your own language file, e.g. **language_xx-YY**. Translate the user interface text entries.
 4. Set Pepito Cleaner to your language, and test your customizazions and RegEx thoroughly.
 
-Your customized files are located in the  _extension directory_ , visible by clicking on  __Show extension path__  in the  __Options__ . They all have the extension `.txt`.  
+Your customized files are located in the *extension directory*, visible by clicking on **Show extension path** in the **Options**. They all have the extension `.txt`.  
 
 ### Export the customized files
 
-Let's assume you have cloned the  _poemenia_  project from GitHub, and your language variant is called  __xx-YY__ . 
+Let's assume you have cloned the *poemenia* project from GitHub, and your language variant is called **xx-YY**. 
 
 Your customized files are:
 * preference.txt
@@ -43,11 +43,11 @@ Your customized files are:
 
 ### Add a macro module
 
-Now export these files to your  _poemenia_  project.
+Now export these files to your *poemenia* project.
 
-1. Make a subdirectory  __xx-YY__  in the project's  __oxt__  folder.
-2. Copy the files listed above from the  _Pepito Cleaner_  extension directory to the  _poemenia_   __xx-YY__  subdirectory.
-3. Open the  __poemenia__  subdirectory in the project's  __oxt__  folder.
+1. Make a subdirectory **xx-YY** in the project's **oxt** folder.
+2. Copy the files listed above from the *Pepito Cleaner* extension directory to the *poemenia* **xx-YY** subdirectory.
+3. Open the **poemenia** subdirectory in the project's **oxt** folder.
 
 Now create a language module file named `xx_YY.xba`: 
 
@@ -85,10 +85,10 @@ Now add your language module to the library. You do this by adding a line to `sc
 
 ### Add a menu entry to poemenia
 
-This is done by opening the  __poemenia.odt__  extension compiler located in the project's  __oxt__ folder. It is strongly advised to learn how to use it by reading the document carefully. 
+This is done by opening the **poemenia.odt** extension compiler located in the project's **oxt** folder. It is strongly advised to learn how to use it by reading the document carefully. 
 
-1. Start OpenOffice with  __poemenia.odt__ . Allow macro execution.
-2. Edit the Document's  __Standard/Module 1/myExtension__  macro.
+1. Start OpenOffice with **poemenia.odt**. Allow macro execution.
+2. Edit the Document's **Standard/Module 1/myExtension** macro.
 
 Append a menu entry to the existing language entries:
 
@@ -127,7 +127,7 @@ Append a menu entry to the existing language entries:
 
 ```
 
-You might wish to add  _xx_  translation lines to the other menu entries according to the example above.
+You might wish to add *xx* translation lines to the other menu entries according to the example above.
 
 ### Build the extension
 
@@ -137,7 +137,7 @@ Compile the extension and install it on OpenOffice for testing.
 
 
 
-## CREDITS
+## Credits
 
 [Pepito Cleaner](https://pepitoweb.altervista.org/pepito_cleaner/index.php) by the Guys From Italy
 
