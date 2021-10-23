@@ -15,6 +15,7 @@ __Achten Sie unbedingt darauf, dass das Programmfenster von Pepito Cleaner gesch
 
 ## Sprache für Pepito Cleaner zu "de-DE" setzen
 
+**Hauptmenü: Extras > Add-Ons > poemenia > Sprache für Pepito Cleaner zu de-DE setzen**
 
 ![](Screenshots/menu-set-de.png)
 
@@ -28,6 +29,8 @@ Nach erfolgreicher Beendigung erscheint eine Meldung.
 
 ## Spracheinstellungen für Pepito Cleaner zurücksetzen
 
+**Hauptmenü: Extras > Add-Ons > poemenia > Spracheinstellungen für Pepito Cleaner zurücksetzen**
+
 ![](Screenshots/menu-reset-de.png)
 
 Damit wird die Benutzeroberfläche auf die zuvor eingestellte Sprache gesetzt. Die zuvor konfigurierten "regex"-Suchmuster werden wiederhergestellt.
@@ -36,11 +39,22 @@ Nach erfolgreicher Beendigung erscheint eine Meldung.
 
 ![](Screenshots/MessageReset.png)
 
+## Pepito Cleaner ausführen
+
+**Hauptmenü: Extras > Add-Ons > poemenia > Pepito Cleaner ausführen**
+
+![](Screenshots/menu-launch-de.png)
+
+Damit kann man *Pepito Cleaner* auch starten.
+
 ## Hilfe
+
+**Hauptmenü: Hilfe > poemenia Hilfe**
+
+![](Screenshots/HelpMenu-de.png)
 
 Im  __Hilfe__ -Menü gibt es ein  __poemenia Hilfe__ -Untermenü. 
 
-![](Screenshots/HelpMenu-de.png)
 
 
 
