@@ -24,7 +24,7 @@ Although currently only a German language pack is available, you can add more la
 * __Pepito Cleaner__  must be installed.
 * __Java__ (OpenOffice needs it to execute macros.)
 
-## Download an d install
+## Download and install
 
 * [Download (poemenia-0.3.0.oxt)](https://raw.githubusercontent.com/peter88213/poemenia/main/poemenia-0.3.0.oxt)
 
@@ -38,7 +38,11 @@ Although currently only a German language pack is available, you can add more la
 
 See the [instructions for use (German)](help-de)
 
-## CREDITS
+## Get updates
+
+This extension supports the update mechanism of OpenOffice. You can let the Extension Manager check for updates from time to time to get the latest release.
+
+## Credits
 
 [Pepito Cleaner](https://pepitoweb.altervista.org/pepito_cleaner/index.php) by the Guys From Italy
 
